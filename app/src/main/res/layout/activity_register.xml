@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <RelativeLayout
+            android:id="@+id/action_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            >
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/btn_back"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_arrow_back"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Sign up"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/action_bar_layout"
+            app:srcCompat="@drawable/registration_logo" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_user"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_layout"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+
+                android:ems="10"
+                android:hint="Full name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/et_reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/et_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_reg_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Mobile"
+                android:inputType="phone" />
+
+
+            <EditText
+                android:id="@+id/et_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Hospital name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/et_university"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="University"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/et_clinicAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Clinic address"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/et_birthDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Birth date : dd/mm/yyy"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/et_goverment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Government"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/et_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:id="@+id/radioGroup"
+            android:layout_centerInParent="true"
+            android:checkedButton="@+id/male" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="Male" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="Female" />
+
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rectangle_pink"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

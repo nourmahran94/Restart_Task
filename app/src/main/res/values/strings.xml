@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidTask</string>
+    <string  name="register"><u>REGISTER</u></string>
+    <string name="line1">------------------------</string>
+    <string name="line2">-------------------------</string>
+    <string name="or_connect_with">Or Connect With</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+</resources>
